@@ -1,0 +1,46 @@
+// Fonts
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/GraphikLCG-Regular.woff2) format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/GraphikLCG-Medium.woff2) format('woff2');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+// Other
+div[class*="__container"]
+{
+    max-width: 1097px;
+    margin: 0 auto;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+
+.hidden-content {
+    overflow: hidden;
+}
+
+
+// Files
+@import '_nullstyle';
+@import '_BEM';
+@import '_header';
