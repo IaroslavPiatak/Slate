@@ -11,6 +11,7 @@
     /* 25px */
     letter-spacing: 0.2px;
     transition: all 0.2s ease-in;
+
     &_blue {
         background: #4452FE;
         border: none;
@@ -58,9 +59,45 @@
         padding: 10px;
     }
 
-    &__button-container {
+}
+
+.card-small {
+    max-width: 269px;
+
+    &__title-container {
+        display: flex;
+        width: 269px;
+    }
+
+    &__icon {
+        padding: 19px 3px;
+    }
+
+    &__title {
+        padding: 10px;
+        color: #FFF;
+        font-family: Graphik;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 150%;
+        /* 30px */
+        letter-spacing: 0.1px;
+    }
+
+    &__text {
+        display: inline-flex;
+        color: #FFF;
+        padding: 10px 0 0 10px;
+        font-family: Graphik;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        /* 24 */
+        letter-spacing: 0.2px;
+        
     }
 }
+
 
 
 @media (max-width: 991.98px) {

@@ -1,4 +1,4 @@
-.tittle-block {
+.title-block {
     background-color: #181818;
 
     &__container {
@@ -7,7 +7,7 @@
 }
 
 .text-block {
-    &__title {
+    &_big-title {
         max-width: 800px;
         margin: 0 auto;
         font-family: Graphik;
@@ -22,7 +22,7 @@
         }
     }
 
-    &__text {
+    &_big-text {
         max-width: 795px;
 
         &:not(:last-child) {
@@ -68,7 +68,7 @@
     div[class*=__container] {
         max-width: none;
     }
-    .tittle-block {
+    .title-block {
         &__container {
             padding: 25px 15px 35px;
         }
