@@ -22,7 +22,7 @@ div[class*="__container"]
 html,body {
     width: 100%;
     height: 100%;
-    background-color: #181818;
+    
 }
 
 .wrapper {
@@ -44,3 +44,4 @@ html,body {
 @import '_nullstyle';
 @import '_BEM';
 @import '_header';
+@import '_tittle-block';
