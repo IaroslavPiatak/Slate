@@ -609,3 +609,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 4px;
   }
 }
+.text-block__text_extensions {
+  max-width: 568px;
+}

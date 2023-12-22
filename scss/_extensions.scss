@@ -1,0 +1,14 @@
+.extensions {
+
+    &__container {
+    }
+}
+.text-block {
+
+    &__text {
+
+        &_extensions {
+            max-width: 568px;
+        }
+    }
+}
