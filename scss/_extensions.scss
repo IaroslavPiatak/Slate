@@ -1,14 +1,213 @@
 .extensions {
 
     &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px 50px;
     }
+
+    &__cards-container {
+        display: flex;
+        width: 100%;
+        gap: 33px;
+        justify-content: center;
+    }
+
+    &__card {}
 }
-.text-block {
+
+.card-extensions {
+    display: flex;
+    flex: 0 1 43.5%;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #D3D3D3;
+    background: #FFF;
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+
+    &__title {
+        max-width: 372px;
+
+        color: #000;
+        text-align: center;
+        /* Title */
+        font-family: Graphik;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 150%;
+        /*30px*/
+        letter-spacing: 0.1px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
 
     &__text {
+        max-width: 372px;
+        padding: 0 10px;
+        color: #5C5C5C;
+        text-align: center;
+        /* Paragraphe */
+        font-family: Graphik;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        /*24px*/
+        letter-spacing: 0.2px;
 
-        &_extensions {
-            max-width: 568px;
+        &_1 {
+            &:not(:last-child) {
+                margin-bottom: 67px;
+            }
         }
+
+        &_2 {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__button {
+        height: 52px;
+        padding: 20px 36px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        background: #4452FE;
+        box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+        color: #FFF;
+        font-family: Graphik;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 147.059%;
+        /*25px*/
+        letter-spacing: 0.2px;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            transform: scale(1.1)
+        }
+
+        &:active {
+            transition: all 0.1s ease-in;
+            transform: translateY(5px);
+        }
+
+        &_1 {
+            &:not(:last-child) {
+                margin-bottom: 57px;
+            }
+        }
+
+        &_2 {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+
+    &__img {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+      
+     
+        &_1 {
+            width: 85%;
+        }
+        &_2 {
+            width: 80%;
+        }
+    }
+}
+
+.text-block__text_extensions {
+    max-width: 582px;
+}
+
+//PC
+@media (max-width: 1087px) {
+    div[class*=__container] {
+        max-width: 970px;
+    }
+
+}
+
+// TABLET
+@media (max-width: 991.98px) {
+    div[class*=__container] {
+        max-width: 750px;
+    }
+
+    .extensions {
+        &__cards-container {
+            flex-wrap: wrap;
+        }
+    }
+
+    .card-extensions {
+        flex: 0 1 66%;
+    }
+}
+
+//MOBILE
+@media (max-width: 767.98px) {
+    div[class*=__container] {
+        max-width: none;
+    }
+    .card-extensions {
+        flex: 0 1 80%;
+
+        &__title {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    
+        &__text {
+
+            &_1 {
+                &:not(:last-child) {
+                    margin-bottom: 35px;
+                }
+            }
+    
+            &_2 {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    
+        &__button {
+    
+            &_1 {
+                &:not(:last-child) {
+                    margin-bottom: 35px;
+                }
+            }
+    
+            &_2 {
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+    
+        }
+    }
+    
+}
+
+//MOBILE SMALL
+@media (max-width: 479.98px) {
+    .card-extensions {
+        flex: 0 1 100%;
     }
 }
