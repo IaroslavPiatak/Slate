@@ -674,6 +674,9 @@ h1, h2, h3, h4, h5, h6 {
 .gallery__btn {
   padding: 13.5px 40px;
 }
+.gallery:not(:last-child) {
+  margin-bottom: 100px;
+}
 
 .gallery-content {
   width: 100%;
@@ -735,6 +738,9 @@ h1, h2, h3, h4, h5, h6 {
   div[class*=__container] {
     max-width: none;
   }
+  .gallery:not(:last-child) {
+    margin-bottom: 0px;
+  }
   .gallery-content__top {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -750,9 +756,83 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
+.partners:not(:last-child) {
+  margin-bottom: 100px;
+}
+.partners__container {
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partners__content {
+  display: flex;
+  justify-content: center;
+  gap: 74px;
+  flex-wrap: wrap;
+}
+.partners__content:not(:last-child) {
+  margin-bottom: 50px;
+}
+.partners__top {
+  display: flex;
+  gap: 74px;
+}
+.partners__down {
+  display: flex;
+  gap: 74px;
+}
+.partners__button {
+  padding: 13.5px 40px;
+}
+.partners .text-block__text {
+  max-width: 547px;
+}
+.partners .text-block:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1087px) {
+  div[class*=__container] {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  div[class*=__container] {
+    max-width: 750px;
+  }
+  .partners__content {
+    flex: 0 1 50%;
+    gap: 50px;
+    flex-direction: column;
+  }
+  .partners__top, .partners__down {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .partners__down a:nth-child(1) {
+    flex: 0 1 56px;
+  }
+  .partners__down a:nth-child(2) {
+    flex: 0 1 47px;
+  }
+  .partners__down a:nth-child(3) {
+    flex: 0 1 83px;
+  }
+  .partners__down img {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  div[class*=__container] {
+    max-width: none;
+  }
+  .partners:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
 .btn {
   border: 1px solid #fff;
-  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
   background-color: inherit;
   color: #FFF;
   font-family: Graphik;

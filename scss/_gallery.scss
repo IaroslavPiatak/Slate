@@ -16,6 +16,9 @@
     &__btn {
         padding: 13.5px 40px;
     }
+    &:not(:last-child) {
+        margin-bottom: 100px;
+    }
 }
 
 .gallery-content {
@@ -107,6 +110,11 @@
 @media (max-width: 767.98px) {
     div[class*=__container] {
         max-width: none;
+    }
+    .gallery {
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
     }
 
     .gallery-content {
