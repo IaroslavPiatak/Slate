@@ -6,7 +6,7 @@
     font-family: Graphik;
     font-size: 17px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 147.059%;
     /* 25px */
     letter-spacing: 0.2px;
@@ -117,3 +117,16 @@
 
 
 }
+
+//MOBILE SMALL
+@media (max-width: 479.98px) {
+    .text-block {
+
+        &__title {
+            font-size: 42px;
+        }
+    }
+}
+
+
+
