@@ -831,6 +831,100 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px;
   }
 }
+.reviews:not(:last-child) {
+  margin-bottom: 100px;
+}
+.reviews__container {
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews__content {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 23px;
+}
+.card-reviews {
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  border-radius: 10px;
+  border: 1px solid #DEDEDE;
+}
+.card-reviews__title {
+  display: flex;
+  gap: 23px;
+}
+.card-reviews__name-block {
+  display: flex;
+  flex-direction: column;
+}
+.card-reviews__name, .card-reviews__profession {
+  color: #FFF;
+  font-family: Graphik;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24%*/
+  letter-spacing: 0.2px;
+}
+.card-reviews__text {
+  color: #FFF;
+  font-family: Graphik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24%*/
+  letter-spacing: 0.2px;
+}
+.card-reviews__text_1 {
+  max-width: 323px;
+}
+.card-reviews__text_2 {
+  max-width: 341px;
+}
+.card-reviews__text_3 {
+  max-width: 315px;
+}
+.card-reviews__text_4 {
+  max-width: 347px;
+}
+@media (max-width: 1087px) {
+  div[class*=__container] {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  div[class*=__container] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  div[class*=__container] {
+    max-width: none;
+  }
+  .reviews:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .reviews__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .card-reviews {
+    padding: 25px;
+  }
+  .card-reviews:last-child {
+    display: none;
+  }
+}
 .btn {
   border: 1px solid #fff;
   background-color: inherit;
